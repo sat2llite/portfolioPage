@@ -1,0 +1,54 @@
+@font-face{
+  font-family:'bitbit';
+  src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
+
+html, body, pre, code, kbd, samp {
+  font-family: "둥근모꼴";
+}
+
+// height를 필수로 넣을 수 있도록 맨 앞에
+@mixin set-box($height, $width: 100%, $border-radius: 0) {
+  height: $height;
+  width: $width;
+  border-radius: $border-radius;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner {
+  width: 98%;
+  height: 100%;
+  margin: auto;
+}
+
+.nes-balloon {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  p {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .tri {
+    border-top: 10px solid #000;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-top: 10px;
+  }
+
+  &:hover { color: #666; }
+}
