@@ -10,7 +10,7 @@ const Skills = () => {
       <div className="skills">
         <div className="inner">
           <div className="skill_progress flex_center">
-            <progress class="nes-progress" value="90" max="100"></progress>
+            <progress className="nes-progress" value="90" max="100"></progress>
           </div>
         </div>
       </div>
