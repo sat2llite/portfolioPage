@@ -3,12 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+h2 { font-size: 30px; text-align: center; }
 
 // *Header.jsx
 header {
   @include set-box(40px);
   background: #000;
   position: relative;
+  z-index: 999;
 
   .port {
     position: absolute;
@@ -16,7 +18,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    text-align: center; 
+    text-align: center;
   }
 
   .nav {
@@ -32,21 +34,22 @@ header {
       background: #000;
       margin-left: 5px;
       margin-top: 7px;
-      
-      +span { margin-top: 5px; }
+
+      + span {
+        margin-top: 5px;
+      }
     }
-    // .hamburger.on span:nth-child(1) { 
-    //   transform: rotate(-45deg); 
+    // .hamburger.on span:nth-child(1) {
+    //   transform: rotate(-45deg);
     //   margin-top: 8px;
     // }
-    // .hamburger.on span:nth-child(2) { 
+    // .hamburger.on span:nth-child(2) {
     //   transform: rotate(45deg);
-    //   margin-top: -2px; 
+    //   margin-top: -2px;
     // }
     // .hamburger.on span:nth-child(3) { opacity: 0; }
   }
 }
-
 
 // *Visual.jsx
 .visual {
@@ -62,4 +65,39 @@ header {
   //   color: #fff;
   //   text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
   // }
+}
+
+// *Profile.jsx
+.profile {
+  @include set-box(100%);
+  
+
+  .dot_image {
+    position: absolute;
+    bottom: 20rem;
+    margin-top: 15rem;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+// *Skills.jsx
+.skills {
+  border: 1px solid red;
+
+  .skill_progress {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@keyframes progressBar {
+  0% {
+    
+  }
+  100% {
+    
+  }
 }

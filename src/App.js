@@ -13,7 +13,7 @@ function App() {
       {/* <Outlet /> */}
       <Visual />
       <Link to="/profile">
-        <Balloon props="Baek Seung Yeon’s portfolio!" />
+        <Balloon text="Baek Seung Yeon’s portfolio!" />
       </Link>
     </div>
     // </RouterProvider>
