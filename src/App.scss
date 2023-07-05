@@ -89,6 +89,8 @@ header {
 
   .skill_progress {
     width: 70%;
-    margin: auto;
+    margin: 50px auto;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
