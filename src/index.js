@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Profile from './components/pages/Profile';
 import NotFound from './components/pages/NotFound';
 import Skills from './components/pages/Skills';
+import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,16 @@ const router = createBrowserRouter([
   {
     path:'/skills',
     element:<Skills />,
+    errorElement:<NotFound />,
+  },
+  {
+    path:'/portfolio',
+    element:<Portfolio />,
+    errorElement:<NotFound />,
+  },
+  {
+    path:'/contact',
+    element:<Contact />,
     errorElement:<NotFound />,
   },
 ])

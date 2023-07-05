@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <Link to="">
+      <Link to="/portfolio">
         <Balloon text={"skills"} />
       </Link>
     </>

@@ -94,3 +94,12 @@ header {
     row-gap: 30px;
   }
 }
+
+// *Portfolio.jsx
+
+
+// *Contact.jsx
+.contact {
+  @include set-box(100%);
+  border: 1px solid red;
+}
