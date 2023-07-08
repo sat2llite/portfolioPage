@@ -10,11 +10,20 @@ const Contact = () => {
       <div className="contact">
         <div className="inner">
           <div className="">
-            <h2>CONTACT</h2>
+            <div className="dot_image">
+              <h2>CONTACT</h2>
+              <img src="./img/dd.png" alt="" />
+            </div>
+
+            <div class="nes-balloon from-left">
+              <p>Thank You!</p>
+            </div>
           </div>
         </div>
       </div>
-        <Balloon text={"감사합니다! \n ddd"} />
+      <Link to="/">
+        <Balloon text={"> Github \n velog \n contact"} />
+      </Link>
     </>
   );
 };

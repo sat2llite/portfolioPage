@@ -9,7 +9,7 @@ const Profile = () => {
       <Header />
       <div className="profile">
         <div className="dot_image">
-        <h2>PROFILE</h2>
+          <h2>PROFILE</h2>
           <img src="img/dot.gif" alt="char" />
         </div>
       </div>

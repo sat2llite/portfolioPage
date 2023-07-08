@@ -75,7 +75,6 @@ header {
   .dot_image {
     position: absolute;
     bottom: 20rem;
-    margin-top: 15rem;
     flex-direction: column;
     left: 50%;
     transform: translateX(-50%);
@@ -96,10 +95,35 @@ header {
 }
 
 // *Portfolio.jsx
+.portfolio {
+  @include set-box(100%);
+
+  .box_wrap {
+    margin-bottom: 30px;
+  }
+}
 
 
 // *Contact.jsx
 .contact {
   @include set-box(100%);
-  border: 1px solid red;
+
+  .dot_image {
+    width: 300px;
+    position: absolute;
+    bottom: 20rem;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nes-balloon {
+    position: absolute;
+    top: 15rem;
+    right: 30rem;
+
+    p {
+      font-size: 20px;
+    }
+  }
 }

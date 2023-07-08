@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Balloon = ({ text }) => {
   return (
     <div className="balloon">
-      <div className="nes-balloon flex_between">
+      <div className="nes-balloon flex_between bottom_balloon">
         <p>
           {text.split("\n").map((txt) => (
             <>

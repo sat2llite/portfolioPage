@@ -2,9 +2,15 @@
   font-family:'bitbit';
   src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
 }
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html, body, pre, code, kbd, samp {
-  font-family: "둥근모꼴";
+  font-family: "DungGeunMo";
 }
 
 // height를 필수로 넣을 수 있도록 맨 앞에
@@ -29,9 +35,10 @@ html, body, pre, code, kbd, samp {
   width: 98%;
   height: 100%;
   margin: auto;
+  padding: 50px;
 }
 
-.nes-balloon {
+.bottom_balloon {
   width: 70%;
   position: absolute;
   bottom: 0;
@@ -51,4 +58,37 @@ html, body, pre, code, kbd, samp {
   }
 
   &:hover { color: #666; }
+}
+
+
+.box {
+  @include set-box(300px, 300px);
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  .bar {
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.more_btn {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .more {
+    display: none;
+  }
+  
+  &:hover {
+    .more {
+      display: block;
+      border: 2px solid #000;
+      border-radius: 3px;
+      padding: 7px 10px;
+    }
+  }
 }
