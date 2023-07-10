@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="">
             <div className="dot_image">
               <h2>CONTACT</h2>
-              <img src="./img/dd.png" alt="" />
+              <img src="./img/jump.gif" alt="" />
             </div>
 
             <div class="nes-balloon from-left">
