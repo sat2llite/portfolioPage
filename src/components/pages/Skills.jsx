@@ -22,23 +22,6 @@ const Skills = () => {
   }, [number]);
   
 
-  // useEffect(()=>{
-  //   setInterval(() => {
-  //     if (number == 0) {
-  //       setNumber((number) => number + 1);
-  //       console.log(number);
-  //     } else if (number === 90) {
-  //       // clearInterval(this);
-  //       setNumber(90);
-  //       console.log(number);
-  //     }
-  //   }, 10);
-  // })
-
-  // let interval = setNumber(90);
-  // setTimeout(() => {
-  //   clearInterval(interval);
-  // }, 1000);
 
   return (
     <>
@@ -46,6 +29,9 @@ const Skills = () => {
       <div className="skills">
         <div className="inner">
           <div className="skill_progress flex_center">
+            <progress className="nes-progress" value={number} max="100"></progress>
+            <progress className="nes-progress" value={number} max="100"></progress>
+            <progress className="nes-progress" value={number} max="100"></progress>
             <progress className="nes-progress" value={number} max="100"></progress>
             <progress className="nes-progress" value={number} max="100"></progress>
             <progress className="nes-progress" value={number} max="100"></progress>

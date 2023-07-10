@@ -15,7 +15,7 @@ const Contact = () => {
               <img src="./img/jump.gif" alt="" />
             </div>
 
-            <div class="nes-balloon from-left">
+            <div class="nes-balloon from-left bubble">
               <p>Thank You!</p>
             </div>
           </div>

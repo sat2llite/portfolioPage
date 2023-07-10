@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
 import { Link } from "react-router-dom";
+import ReactPortfolio from "./modal/ReactPortfolio";
 
 const Portfolio = () => {
+  const [modal, setModal] = useState(false);
+  const showModal = () => {
+    setModal(true);
+  }
+
   return (
     <>
       <Header />
@@ -15,7 +21,8 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <button className="more">VIEW MORE</button>
+                <button className="more" onClick={showModal}>VIEW MORE</button>
+                {modal && <ReactPortfolio setModal={setModal} />}
               </div>
             </div>
 

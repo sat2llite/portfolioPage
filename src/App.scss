@@ -3,7 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
-h2 { font-size: 30px; text-align: center; }
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.menu {
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  .menu_ul {
+    flex-direction: column;
+    height: 100%;
+
+    li {
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+}
 
 // *Header.jsx
 header {
@@ -21,34 +42,31 @@ header {
     text-align: center;
   }
 
-  .nav {
-    @include set-box(30px, 30px);
-    background: #fff;
-    position: absolute;
-    top: 5px;
+  .nav_wrap {
+    @include set-box(100%, 98%);
+    margin: auto;
 
-    .hamburger span {
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: #000;
-      margin-left: 5px;
-      margin-top: 7px;
-
-      + span {
-        margin-top: 5px;
+    .nav {
+      @include set-box(30px, 30px);
+      background: #fff;
+      position: absolute;
+      top: 5px;
+      cursor: pointer;
+  
+      .hamburger.on span:nth-child(1) {
+        transform: rotate(-45deg);
+        margin-top: 14px;
+      }
+      .hamburger.on span:nth-child(2) {
+        transform: rotate(45deg);
+        margin-top: -2px;
+      }
+      .hamburger.on span:nth-child(3) {
+        opacity: 0;
       }
     }
-    // .hamburger.on span:nth-child(1) {
-    //   transform: rotate(-45deg);
-    //   margin-top: 8px;
-    // }
-    // .hamburger.on span:nth-child(2) {
-    //   transform: rotate(45deg);
-    //   margin-top: -2px;
-    // }
-    // .hamburger.on span:nth-child(3) { opacity: 0; }
   }
+  
 }
 
 // *Visual.jsx
@@ -70,7 +88,6 @@ header {
 // *Profile.jsx
 .profile {
   @include set-box(100%);
-  
 
   .dot_image {
     position: absolute;
@@ -80,7 +97,6 @@ header {
     transform: translateX(-50%);
   }
 }
-
 
 // *Skills.jsx
 .skills {
@@ -100,9 +116,39 @@ header {
 
   .box_wrap {
     margin-bottom: 30px;
+    column-gap: 10px;
+  }
+
+  // ReactPortfolio.jsx
+  .modalContainer {
+    /* 모달창 크기 */
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+
+    /* 최상단 위치 */
+    z-index: 998;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 모달창 디자인 */
+    background-color: #fff;
+    border: 1px solid black;
+  }
+
+  .close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-size: 30px;
+    right: 20px;
+    top: 50px;
+    cursor: pointer;
   }
 }
-
 
 // *Contact.jsx
 .contact {
@@ -117,7 +163,7 @@ header {
     transform: translateX(-50%);
   }
 
-  .nes-balloon {
+  .bubble {
     position: absolute;
     top: 15rem;
     right: 40rem;
