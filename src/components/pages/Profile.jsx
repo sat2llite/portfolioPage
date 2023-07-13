@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
-import { Link } from "react-router-dom";
 
 const Profile = () => {
   const txt =

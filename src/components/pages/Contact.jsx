@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
-  const url = "https://github.com/sat2llite";
+  // const url = "https://github.com/sat2llite";
 
   const txt = "Github \n velog \n contact";
   const [text, setText] = useState("");

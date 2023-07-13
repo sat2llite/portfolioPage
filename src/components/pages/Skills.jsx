@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 // let interval = undefined;
