@@ -72,17 +72,22 @@ header {
 // *Visual.jsx
 .visual {
   @include set-box(100%);
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  .visual_title {
+    display: flex;
+    font-size: 6rem;
+    font-family: bitbit;
+    color: #fff;
+    -webkit-text-stroke: 2.5px #000;
+  }
+
   .dot_image {
     margin: auto;
-    margin-top: 15rem;
     flex-direction: column;
   }
-  // p {
-  //   font-family: "bitbit";
-  //   font-size: 60px;
-  //   color: #fff;
-  //   text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
-  // }
 }
 
 // *Profile.jsx
@@ -100,13 +105,28 @@ header {
 
 // *Skills.jsx
 .skills {
-  border: 1px solid red;
+  @include set-box(100%);
 
-  .skill_progress {
-    width: 70%;
-    margin: 50px auto;
-    flex-direction: column;
-    row-gap: 30px;
+  // .skill_progress {
+  //   width: 70%;
+  //   margin: 50px auto;
+  //   flex-direction: column;
+  //   row-gap: 30px;
+  // }
+  .box_wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    column-gap: 20px;
+    .box {
+      @include set-box(200px, 50rem);
+      border-radius: 5px;
+    }
+    .text {
+      padding: 20px;
+      h4 { 
+        font-size: 24px;
+      }
+    }
   }
 }
 

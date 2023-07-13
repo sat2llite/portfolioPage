@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
 import { Link } from "react-router-dom";
 import ReactPortfolio from "./modal/ReactPortfolio";
 
 const Portfolio = () => {
+  const txt = "portfolio";
+  const [text, setText] = useState("");
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText(text + txt[count]);
+      setCount(count + 1);
+    }, 100);
+    if (count === txt.length) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  });
+
   const [modal, setModal] = useState(false);
   const showModal = () => {
     setModal(true);
-  }
+  };
 
   return (
     <>
@@ -21,7 +36,9 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <button className="more" onClick={showModal}>VIEW MORE</button>
+                <button className="more" onClick={showModal}>
+                  VIEW MORE
+                </button>
                 {modal && <ReactPortfolio setModal={setModal} />}
               </div>
             </div>
@@ -93,9 +110,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <Link to="/contact">
-        <Balloon text={"portfolio"} />
-      </Link>
+      <Balloon text={text} compUrl="/contact" />
     </>
   );
 };

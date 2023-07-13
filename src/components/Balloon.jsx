@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Balloon = ({ text }) => {
+const Balloon = ({ text, compUrl }) => {
   return (
-    <div className="balloon">
-      <div className="flex_between bottom_balloon">
+    <div className="balloon flex_between">
+      <div className="bottom_balloon">
         <p>
           {text.split("\n").map((txt) => (
             <>
@@ -12,8 +13,10 @@ const Balloon = ({ text }) => {
             </>
           ))}
         </p>
-        <span className="tri"></span>
       </div>
+      <Link to={compUrl}>
+        <span className="tri flex_center"></span>
+      </Link>
     </div>
   );
 };

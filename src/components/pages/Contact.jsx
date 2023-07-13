@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const url = "https://github.com/sat2llite";
+
+  const txt = "Github \n velog \n contact";
+  const [text, setText] = useState("");
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText(text + txt[count]);
+      setCount(count + 1);
+    }, 100);
+    if (count === txt.length) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  });
+
   return (
     <>
       <Header />
@@ -21,9 +38,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Link to="/">
-        <Balloon text={"> Github \n velog \n contact"} />
-      </Link>
+        <Balloon text={text} compUrl="/" />
+          {/* <button onClick={()=>{window.open(url)}}>ㅎㅇ</button> */}
     </>
   );
 };
