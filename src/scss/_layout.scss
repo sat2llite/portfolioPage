@@ -9,9 +9,35 @@
   font-style: normal;
 }
 
+// 햄버거 메뉴 open시 스크롤 없애기
+body.no_scroll {
+  overflow: hidden !important
+}
+body::-webkit-scrollbar {
+  width: 7px;  /* 스크롤바의 너비 */
+  height: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #000; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  // background: rgba(#000, 100%);
+  background: #fff;
+}
+
 html, body, pre, code, kbd, samp {
   font-family: "DungGeunMo";
 }
+
+// 반응형 크기 지정
+$mini_mobile: "(max-width: 500px)";
+$mobile: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1200px)";
+$pc: "(min-width: 1201px)";
 
 // height를 필수로 넣을 수 있도록 맨 앞에
 @mixin set-box($height, $width: 100%, $border-radius: 0) {

@@ -62,9 +62,9 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-half"></i>
                 <h4>HTML/CSS/SCSS</h4>
                 <ul>
-                  <li>웹 표준</li>
-                  <li>반응형</li>
-                  <li>sass/scss</li>
+                  <li>1. 웹 표준을 준수하여 코딩할 수 있습니다.</li>
+                  <li>2. 반응형 페이지를 만들 수 있습니다.</li>
+                  <li>3. sass/scss를 사용하여 코딩할 수 있습니다.</li>
                 </ul>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-empty"></i>
                 <h4>Javascript</h4>
                 <ul>
-                  <li>1</li>
+                  <li>1. </li>
                   <li>2</li>
                   <li>3</li>
                 </ul>

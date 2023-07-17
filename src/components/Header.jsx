@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Menu from "./pages/Menu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // 햄버거메뉴
@@ -7,6 +8,7 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen((prevStatus) => (prevStatus ? false : true));
     document.querySelector(".hamburger").classList.toggle("on");
+    document.body.classList.toggle("no_scroll");
   };
 
   return (
@@ -23,7 +25,9 @@ const Header = () => {
           </div>
         </div>
 
-        <p className="port">PORTFOLIO</p>
+        <Link to="/">
+          <p className="port">PORTFOLIO</p>
+        </Link>
       </header>
     </>
   );

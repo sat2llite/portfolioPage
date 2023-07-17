@@ -63,6 +63,7 @@ const Visual = () => {
             </div>
           </h1>
         </div>
+        
         <div className="dot_image flex_center">
           <img src="img/walk.gif" alt="char" />
           {/* <p>FRONTEND PORTFOLIO</p> */}
