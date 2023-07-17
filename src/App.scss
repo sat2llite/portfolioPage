@@ -71,7 +71,15 @@ header {
 
 // *Visual.jsx
 .visual {
-  @include set-box(100%);
+  @include set-box(calc(100vh - 40px));
+  background: url("../public/img/배경x2.png") 0 center;
+  // animation: movebg 2s infinite;
+  
+  @keyframes movebg {
+    0% {background-position: 0 center;}
+    100% {background-position: -10px center;}
+  }
+
   .title {
     display: flex;
     justify-content: center;

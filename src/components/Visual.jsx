@@ -1,7 +1,14 @@
 import React from "react";
 
-
 const Visual = () => {
+  const img = document.querySelector(".dot_image > img");
+  
+  window.addEventListener("load", () => {
+    setInterval(() => {
+      img.style.transform = "translateX(-10px)";
+    }, 300);
+  });
+
   return (
     <div className="visual">
       <div className="inner">
@@ -65,7 +72,7 @@ const Visual = () => {
           </h1>
         </div>
         <div className="dot_image flex_center">
-          <img src="img/dot.png" alt="char" />
+          <img src="img/walk.gif" alt="char" />
           {/* <p>FRONTEND PORTFOLIO</p> */}
           {/* <p>FRONTEND PORTFOLIO</p> */}
           {/* <p>FRONTEND PORTFOLIO</p> */}
