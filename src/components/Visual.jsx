@@ -1,14 +1,6 @@
 import React from "react";
 
 const Visual = () => {
-  const img = document.querySelector(".dot_image > img");
-  
-  window.addEventListener("load", () => {
-    setInterval(() => {
-      img.style.transform = "translateX(-10px)";
-    }, 300);
-  });
-
   return (
     <div className="visual">
       <div className="inner">
