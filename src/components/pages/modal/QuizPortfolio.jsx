@@ -1,6 +1,6 @@
 import React from "react";
 
-const ReactPortfolio = ({ setModal }) => {
+const QuizPortfolio = ({ setModal }) => {
   const closeModal = () => {
     setModal(false);
   };
@@ -15,7 +15,7 @@ const ReactPortfolio = ({ setModal }) => {
         지금 포폴 페이지
         <div className="inner">
           <div className="left">
-            <img src="img/react_port.png" alt="" />
+            <img src="img/js_port.png" alt="" />
           </div>
           <div className="right"></div>
         </div>
@@ -24,4 +24,4 @@ const ReactPortfolio = ({ setModal }) => {
   );
 };
 
-export default ReactPortfolio;
+export default QuizPortfolio;

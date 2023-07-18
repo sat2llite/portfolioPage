@@ -37,8 +37,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-        <Balloon text={text} compUrl="/" />
-          {/* <button onClick={()=>{window.open(url)}}>ㅎㅇ</button> */}
+      <Balloon text={text} compUrl="/" />
+      {/* <button onClick={()=>{window.open(url)}}>ㅎㅇ</button> */}
     </>
   );
 };

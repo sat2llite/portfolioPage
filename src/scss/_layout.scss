@@ -115,7 +115,7 @@ $pc: "(min-width: 1201px)";
 
 .balloon {
   width: 70%;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
@@ -140,7 +140,7 @@ $pc: "(min-width: 1201px)";
 
 
 .box {
-  @include set-box(300px, 300px);
+  @include set-box(300px, 100rem);
   border: 2px solid #000;
   border-radius: 5px;
 
@@ -156,15 +156,18 @@ $pc: "(min-width: 1201px)";
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -22px;
   
   .more {
     display: none;
   }
   
   &:hover {
+    background: rgba($color: #000, $alpha: .5);
     .more {
       display: block;
-      border: 2px solid #000;
+      border: 2px solid #fff;
+      color: #fff;
       border-radius: 3px;
       padding: 7px 10px;
     }

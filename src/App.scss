@@ -30,7 +30,7 @@ h2 {
 header {
   @include set-box(40px);
   background: #000;
-  position: relative;
+  position: fixed;
   z-index: 999;
 
   .port {
@@ -70,7 +70,7 @@ header {
 
 // *Visual.jsx
 .visual {
-  @include set-box(calc(100vh - 40px));
+  @include set-box(calc(100vh));
   background: url("../public/img/배경x2.png") 0 center;
 
   .inner {
@@ -139,9 +139,45 @@ header {
 .portfolio {
   @include set-box(100%);
 
+  .inner {
+    padding-top: 100px;
+  }
   .box_wrap {
     margin-bottom: 30px;
     column-gap: 10px;
+
+    .box01 {
+      background: url("../public/img/319shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box02 {
+      background: url("../public/img/455shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box03 {
+      background: url("../public/img/687shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box04 {
+      background: url("../public/img/319shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box05 {
+      background: url("../public/img/319shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box06 {
+      background: url("../public/img/319shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box07 {
+      background: url("../public/img/319shots_so.png") no-repeat;
+      background-size: 100%;
+    }
+    .box08 {
+      background: url("../public/img/319shots_so.png") no-repeat;
+      background-size: 100%;
+    }
   }
 
   // ReactPortfolio.jsx
@@ -206,7 +242,9 @@ header {
     .bubble {
       right: 30rem;
 
-      p { font-size: 16px; }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -216,11 +254,12 @@ header {
     .bubble {
       right: 20rem;
 
-      p { font-size: 16px; }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
-
 
 // * tablet
 @media #{$tablet} {
@@ -233,6 +272,33 @@ header {
     }
   }
 
+  // *Portfolio.jsx
+  // .portfolio {
+  //   .inner {
+  //     padding-bottom: 150px;
+  //   }
+  //     .box_wrap {
+  //       width: 100%;
+  //       display: flex;
+  //       justify-content: center;
+  //       margin-bottom: 10px;
+  //       row-gap: 10px;
+  //       flex-wrap: wrap;
+
+  //       .box {
+  //         @include set-box(180px, 18rem);
+  //         border: 2px solid #000;
+  //         border-radius: 5px;
+
+  //         .bar {
+  //           background: #000;
+  //           color: #fff;
+  //           text-align: center;
+  //         }
+  //       }
+  //   }
+  // }
+
   // *Contact.jsx
   .contact {
     @include set-box(100%);
@@ -242,7 +308,9 @@ header {
       top: 15rem;
       right: 11rem;
 
-      p { font-size: 16px; }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -328,7 +396,7 @@ header {
       flex-wrap: wrap;
 
       .box {
-        @include set-box(150px, 18rem);
+        @include set-box(180px, 18rem);
         border: 2px solid #000;
         border-radius: 5px;
 
@@ -400,41 +468,78 @@ header {
       top: 15rem;
       right: 5rem;
 
-      p { font-size: 16px; }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
 
 @media #{$mini_mobile} {
-  // .portfolio {
-  //   @include set-box(100%);
+  // *Skills.jsx
+  .skills {
+    @include set-box(100%);
+    padding-bottom: 100px;
 
-  //   .box_wrap {
-  //     width: 100%;
-  //     margin-bottom: 10px;
-  //     row-gap: 10px;
-  //     // flex-direction: column;
-  //     flex-wrap: wrap;
+    .box_wrap {
+      flex-direction: column;
+      row-gap: 10px;
+      column-gap: 0px;
+      margin-top: 0;
+      margin-bottom: 10px;
 
-  //     .box {
-  //       @include set-box(150px, 10rem);
-  //       border: 2px solid #000;
-  //       border-radius: 5px;
+      .box {
+        @include set-box(180px, 100%);
+        border-radius: 5px;
+      }
+      .text {
+        padding: 10px;
 
-  //       .bar {
-  //         background: #000;
-  //         color: #fff;
-  //         text-align: center;
-  //       }
-  //     }
-  //   }
-  // }
+        h4 {
+          font-size: 16px;
+        }
+        ul {
+          font-size: 13px;
+          // white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  // *Portfolio.jsx
+  .portfolio {
+    @include set-box(100%);
+    padding-bottom: 100px;
+
+    .box_wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      row-gap: 10px;
+      flex-wrap: wrap;
+
+      .box {
+        @include set-box(180px, 18rem);
+        border: 2px solid #000;
+        border-radius: 5px;
+
+        .bar {
+          background: #000;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
 
   .contact {
     .bubble {
       right: 1rem;
 
-      p { font-size: 16px; }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
