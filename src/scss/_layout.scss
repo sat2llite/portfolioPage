@@ -34,6 +34,7 @@ html, body, pre, code, kbd, samp {
 }
 
 // 반응형 크기 지정
+$minimini_mobile: "(max-width: 400px)";
 $mini_mobile: "(max-width: 500px)";
 $mobile: "(max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 1200px)";

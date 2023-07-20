@@ -543,3 +543,109 @@ header {
     }
   }
 }
+
+@media #{$mini_mobile} {
+  // *Visual.jsx
+  .visual {
+    .inner {
+      padding-top: 70px;
+    }
+    .visual_title {
+      display: flex;
+      font-size: 4rem;
+      font-family: bitbit;
+      color: #fff;
+      -webkit-text-stroke: 2.5px #000;
+    }
+
+    .dot_image {
+      margin: auto;
+      flex-direction: column;
+    }
+  }
+
+  // *Profile.jsx
+  .profile {
+    @include set-box(100%);
+
+    .dot_image {
+      position: absolute;
+      bottom: 18rem;
+      flex-direction: column;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  // *Skills.jsxC
+  .skills {
+    @include set-box(100%);
+    padding-bottom: 100px;
+    
+    .inner { width: 100%; }
+    .box_wrap {
+      flex-direction: column;
+      row-gap: 10px;
+      column-gap: 0px;
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      .box {
+        @include set-box(180px, 100%);
+        border-radius: 5px;
+      }
+      .text {
+        padding: 10px;
+
+        h4 {
+          font-size: 16px;
+        }
+        ul {
+          font-size: 12px;
+          // white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  // *Portfolio.jsx
+  .portfolio {
+    @include set-box(100%);
+    padding-bottom: 100px;
+
+    .inner { padding-top: 50px; }
+    .box_wrap {
+      width: 100%;
+      margin-bottom: 10px;
+      row-gap: 10px;
+      flex-wrap: wrap;
+
+      .box {
+        @include set-box(180px, 18rem);
+        border: 2px solid #000;
+        border-radius: 5px;
+
+        .bar {
+          background: #000;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .contact {
+    .dot_image {
+      width: 50%;
+      height: 12rem;
+    }
+
+    .bubble {
+      display: none;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
