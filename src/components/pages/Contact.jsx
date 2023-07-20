@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
-import Balloon from "../Balloon";
-import { Link } from "react-router-dom";
+import Balloon2 from "../Balloon2";
 
 const Contact = () => {
-  const url = "https://github.com/sat2llite";
-
   // const txt = "Github \n velog \n contact";
   const txt = "Github";
-  // const velog = "velog";
-  // const contact = "Contact";
+  const velog = "velog";
+  const contact = "Contact";
   const [text, setText] = useState("");
   const [count, setCount] = useState(0);
 
@@ -41,9 +38,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Link to={url} target="_blank">
-        <Balloon text={text} compUrl="/" />
-      </Link>
+      <Balloon2 text={text} velog={velog} contact={contact} compUrl="/" />
       {/* <button onClick={()=>{window.open(url)}}>ㅎㅇ</button> */}
     </>
   );

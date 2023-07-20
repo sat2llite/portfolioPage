@@ -130,7 +130,12 @@ $pc: "(min-width: 1201px)";
     font-size: 20px;
   }
   // &:hover { color: #666; }
+
+  .textarea {
+    p { padding: 10px; }
+  }
 }
+
 .tri {
   border-top: 10px solid #000;
   border-bottom: 10px solid transparent;
