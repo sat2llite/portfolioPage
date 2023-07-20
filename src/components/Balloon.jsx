@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Balloon = ({ text, compUrl }) => {
+const Balloon = ({ text, compUrl, velog }) => {
   return (
     <div className="balloon flex_between">
       <div className="bottom_balloon">
@@ -13,6 +13,7 @@ const Balloon = ({ text, compUrl }) => {
             </>
           ))}
         </p>
+        {/* <p>{velog}</p> */}
       </div>
       <Link to={compUrl}>
         <span className="tri flex_center"></span>
