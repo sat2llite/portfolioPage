@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Balloon = ({ text, compUrl, velog, contact }) => {
+const Balloon2 = ({ text, compUrl, velog, contact }) => {
   return (
     <div className="balloon flex_between">
       <div className="bottom_balloon">
@@ -27,4 +27,4 @@ const Balloon = ({ text, compUrl, velog, contact }) => {
   );
 };
 
-export default Balloon;
+export default Balloon2;
