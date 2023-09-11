@@ -49,7 +49,7 @@ const Portfolio = () => {
                 <h4>JS</h4>
               </div>
               <div className="more_btn">
-                <Link to="/quizportfolio" target="_blank">
+                <Link to="https://sat2llite.github.io/quiz/" target="_blank">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
