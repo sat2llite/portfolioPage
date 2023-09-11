@@ -8,6 +8,7 @@ import NotFound from './components/pages/NotFound';
 import Skills from './components/pages/Skills';
 import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
+import QuizPortfolio from './components/pages/modal/QuizPortfolio';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
   {
     path:'/contact',
     element:<Contact />,
+    errorElement:<NotFound />,
+  },
+  {
+    path:'/quizportfolio',
+    element:<QuizPortfolio />,
     errorElement:<NotFound />,
   },
 ])

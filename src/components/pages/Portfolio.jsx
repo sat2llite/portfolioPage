@@ -3,6 +3,7 @@ import Header from "../Header";
 import Balloon from "../Balloon";
 import ReactPortfolio from "./modal/ReactPortfolio";
 import QuizPortfolio from "./modal/QuizPortfolio";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const txt = "portfolio";
@@ -48,10 +49,9 @@ const Portfolio = () => {
                 <h4>JS</h4>
               </div>
               <div className="more_btn">
-                <button className="more" onClick={showModal}>
-                  VIEW MORE
-                </button>
-                {modal && <QuizPortfolio setModal={setModal} />}
+                <Link to="/quizportfolio" target="_blank">
+                  <button className="more">VIEW MORE</button>
+                </Link>
               </div>
             </div>
 
