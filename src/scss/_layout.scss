@@ -163,6 +163,8 @@ $pc: "(min-width: 1201px)";
   justify-content: center;
   align-items: center;
   margin-top: -22px;
+
+  a { text-decoration: none; }
   
   .more {
     display: none;
@@ -177,5 +179,57 @@ $pc: "(min-width: 1201px)";
       border-radius: 3px;
       padding: 7px 10px;
     }
+  }
+}
+
+.in_more_btn {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  a { text-decoration: none; }
+
+  .in_more {
+    display: block;
+    border: 2px solid #000;
+    border-radius: 3px;
+    padding: 5px 7px;
+
+    &:hover {
+      background: rgba($color: #000, $alpha: .1);
+      color: #000;
+    }
+  }
+  .in_more {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+// portfolio 상세 페이지 안에서 사용
+.portfolio_content {
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      margin-top: 20px;
+    }
+  }
+}
+
+// portfolio 상세 페이지에서 사용하는 버튼들
+.back_btn_wrap {
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  .back_btn {
+    color: #000;
+    height: 50px;
+    display: block;
   }
 }

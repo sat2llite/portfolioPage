@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const QuizPortfolio = () => {
+const ArcPortfolio = () => {
   return (
-    <div className="quizContainer">
+    <div className="arcContainer">
       <div className="portfolio_content">
         <div className="inner">
           <div className="left">
-            <img src="img/js_port.png" alt="" />
+            {/* <img src="img/js_port.png" alt="" /> */}
           </div>
 
           <div className="right">
@@ -17,18 +17,12 @@ const QuizPortfolio = () => {
               </Link>
             </div>
 
-            <p>자바스크립트로 제작한 포트폴리오 페이지 입니다.</p>
+            <p>HTML과 자바스크립트로 제작한 포트폴리오 페이지 입니다.</p>
             <div className="in_more_btn">
-              <Link
-                to="https://sat2llite.github.io/quiz/"
-                target="_blank"
-              >
+              <Link to="https://sat2llite.github.io/arcteryx/" target="_blank">
                 <button className="in_more">site</button>
               </Link>
-              <Link
-                to="https://github.com/sat2llite/quiz"
-                target="_blank"
-              >
+              <Link to="https://github.com/sat2llite/arcteryx" target="_blank">
                 <button className="in_more">github</button>
               </Link>
             </div>
@@ -39,4 +33,4 @@ const QuizPortfolio = () => {
   );
 };
 
-export default QuizPortfolio;
+export default ArcPortfolio;

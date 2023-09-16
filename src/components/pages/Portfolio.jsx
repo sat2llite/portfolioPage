@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import Balloon from "../Balloon";
-import ReactPortfolio from "./modal/ReactPortfolio";
-import QuizPortfolio from "./modal/QuizPortfolio";
+// import ReactPortfolio from "./modal/ReactPortfolio";
+// import QuizPortfolio from "./modal/QuizPortfolio";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
@@ -21,10 +21,10 @@ const Portfolio = () => {
     return () => clearInterval(interval);
   });
 
-  const [modal, setModal] = useState(false);
-  const showModal = () => {
-    setModal(true);
-  };
+  // const [modal, setModal] = useState(false);
+  // const showModal = () => {
+  //   setModal(true);
+  // };
 
   return (
     <>
@@ -37,10 +37,9 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <button className="more" onClick={showModal}>
-                  VIEW MORE
-                </button>
-                {modal && <ReactPortfolio setModal={setModal} />}
+                <Link to="/reactportfolio">
+                  <button className="more">VIEW MORE</button>
+                </Link>
               </div>
             </div>
 
@@ -49,7 +48,7 @@ const Portfolio = () => {
                 <h4>JS</h4>
               </div>
               <div className="more_btn">
-                <Link to="https://sat2llite.github.io/quiz/" target="_blank">
+                <Link to="/quizportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -60,7 +59,9 @@ const Portfolio = () => {
                 <h4>HTML</h4>
               </div>
               <div className="more_btn">
-                <button className="more">VIEW MORE</button>
+                <Link to="/arcportfolio">
+                  <button className="more">VIEW MORE</button>
+                </Link>
               </div>
             </div>
 

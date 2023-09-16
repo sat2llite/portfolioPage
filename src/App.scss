@@ -99,7 +99,9 @@ header {
 .profile {
   @include set-box(100%);
   .balloon {
-    p { display: none; }
+    p {
+      display: none;
+    }
   }
   .dot_image {
     position: absolute;
@@ -181,37 +183,36 @@ header {
       background-size: 100%;
     }
   }
+  // .modalContainer {
+  //   /* 모달창 크기 */
+  //   width: 100%;
+  //   height: 100%;
+  //   padding-top: 40px;
 
-  // ReactPortfolio.jsx
-  .modalContainer {
-    /* 모달창 크기 */
-    width: 100%;
-    height: 100%;
-    padding-top: 40px;
+  //   /* 최상단 위치 */
+  //   z-index: 998;
 
-    /* 최상단 위치 */
-    z-index: 998;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  //   /* 모달창 디자인 */
+  //   background-color: #fff;
+  //   border: 1px solid black;
+  // }
 
-    /* 모달창 디자인 */
-    background-color: #fff;
-    border: 1px solid black;
-  }
-
-  .close {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    font-size: 30px;
-    right: 20px;
-    top: 50px;
-    cursor: pointer;
-  }
+  // .close {
+  //   width: 50px;
+  //   height: 50px;
+  //   position: absolute;
+  //   font-size: 30px;
+  //   right: 20px;
+  //   top: 50px;
+  //   cursor: pointer;
+  // }
 }
+
 
 // *Contact.jsx
 .contact {
@@ -478,7 +479,6 @@ header {
 }
 
 @media #{$mini_mobile} {
-  
   // *Skills.jsx
   .skills {
     @include set-box(100%);
