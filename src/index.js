@@ -11,6 +11,9 @@ import Contact from "./components/pages/Contact";
 import ReactPortfolio from "./components/pages/modal/ReactPortfolio";
 import QuizPortfolio from "./components/pages/modal/QuizPortfolio";
 import ArcPortfolio from "./components/pages/modal/ArcPortfolio";
+import PoloPortfolio from "./components/pages/modal/PoloPortfolio";
+import YoutubePortfolio from "./components/pages/modal/YoutubePortfolio";
+import MoPortfolio from "./components/pages/modal/MoPortfolio";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +54,21 @@ const router = createBrowserRouter([
   {
     path: "/arcportfolio",
     element: <ArcPortfolio />,
+    errorElement: <NotFound />
+  },
+  {
+    path: "/poloportfolio",
+    element: <PoloPortfolio />,
+    errorElement: <NotFound />
+  },
+  {
+    path: "/youtubeportfolio",
+    element: <YoutubePortfolio />,
+    errorElement: <NotFound />
+  },
+  {
+    path: "/moportfolio",
+    element: <MoPortfolio />,
     errorElement: <NotFound />
   }
 ]);

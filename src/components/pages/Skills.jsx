@@ -83,8 +83,8 @@ const Skills = () => {
                 <h4>Javascript</h4>
                 <ul>
                   <li>1. </li>
-                  <li>2</li>
-                  <li>3</li>
+                  <li>2. </li>
+                  <li>3. </li>
                 </ul>
               </div>
             </div>
@@ -123,9 +123,9 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-half"></i>
                 <h4>Photoshop/Figma</h4>
                 <ul>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
+                  <li>1. </li>
+                  <li>2. </li>
+                  <li>3. </li>
                 </ul>
               </div>
             </div>

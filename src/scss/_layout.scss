@@ -112,6 +112,8 @@ $pc: "(min-width: 1201px)";
   + span {
     margin-top: 5px;
   }
+
+  transition: .2s;
 }
 
 .balloon {
@@ -202,7 +204,7 @@ $pc: "(min-width: 1201px)";
     }
   }
   .in_more {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
   }
 }
@@ -210,6 +212,8 @@ $pc: "(min-width: 1201px)";
 
 // portfolio 상세 페이지 안에서 사용
 .portfolio_content {
+  color: #000;
+  
   .inner {
     display: flex;
     justify-content: space-between;

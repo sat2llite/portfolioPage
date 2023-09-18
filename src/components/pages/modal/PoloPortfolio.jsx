@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ReactPortfolio = () => {
-  //   const closeModal = () => {
-  //     setModal(false);
-  //   };
-
+const PoloPortfolio = () => {
   return (
-    <div className="reactContainer">
+    <div className="poloContainer">
       {/* <button className="close">
         X
       </button> */}
@@ -24,21 +20,12 @@ const ReactPortfolio = () => {
               </Link>
             </div>
 
-            <p>현재까지 작업한 작업물들을 소개하는 포트폴리오 페이지 입니다.</p>
-            <p>
-              도트 게임 형식으로 디자인하였고, 리액트를 사용하여 작업했습니다.
-            </p>
+            <p>리액트로 폴로 랄프 로렌 클론코딩</p>
             <div className="in_more_btn">
-              <Link
-                to="https://seungyeon-portfolio.netlify.app"
-                target="_blank"
-              >
+              <Link to="https://polo-react-app.netlify.app" target="_blank">
                 <button className="in_more">site</button>
               </Link>
-              <Link
-                to="https://github.com/sat2llite/portfolioPage"
-                target="_blank"
-              >
+              <Link to="https://github.com/sat2llite/shop" target="_blank">
                 <button className="in_more">github</button>
               </Link>
             </div>
@@ -49,4 +36,4 @@ const ReactPortfolio = () => {
   );
 };
 
-export default ReactPortfolio;
+export default PoloPortfolio;
