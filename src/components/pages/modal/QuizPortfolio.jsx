@@ -7,7 +7,7 @@ const QuizPortfolio = () => {
       <div className="portfolio_content">
         <div className="inner">
           <div className="left">
-            <img src="img/js_port.png" alt="" />
+            <img src="../img/js_port.png" alt="" />
           </div>
 
           <div className="right">

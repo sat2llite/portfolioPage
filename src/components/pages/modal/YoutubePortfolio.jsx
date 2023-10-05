@@ -19,7 +19,7 @@ const YoutubePortfolio = () => {
 
             <p>리액트로 작업한 유튜브 클론코딩입니다.</p>
             <div className="in_more_btn">
-              <Link to="https://sat2llite-react-youtube.netlify.appp" target="_blank">
+              <Link to="https://sat2llite-react-youtube.netlify.app" target="_blank">
                 <button className="in_more">site</button>
               </Link>
               <Link to="https://github.com/sat2llite/youtube" target="_blank">

@@ -70,7 +70,7 @@ const Portfolio = () => {
                 <h4>JS</h4>
               </div>
               <div className="more_btn">
-                <Link to="/portfolioquizportfolio">
+                <Link to="/portfolio/quizportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>

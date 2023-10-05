@@ -17,7 +17,7 @@ const MoPortfolio = () => {
               </Link>
             </div>
 
-            <p>html로 제작된 페이지</p>
+            <p>html로 제작된 페이지입니다.</p>
             <div className="in_more_btn">
               <Link to="https://sat2llite.github.io/MO/" target="_blank">
                 <button className="in_more">site</button>
