@@ -37,7 +37,7 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <Link to="/reactportfolio">
+                <Link to="/portfolio/reactportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <Link to="/youtubeportfolio">
+                <Link to="/portfolio/youtubeportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <Link to="/poloportfolio">
+                <Link to="/portfolio/poloportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -70,7 +70,7 @@ const Portfolio = () => {
                 <h4>JS</h4>
               </div>
               <div className="more_btn">
-                <Link to="/quizportfolio">
+                <Link to="/portfolioquizportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -83,7 +83,7 @@ const Portfolio = () => {
                 <h4>HTML</h4>
               </div>
               <div className="more_btn">
-                <Link to="/arcportfolio">
+                <Link to="/portfolio/arcportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -94,7 +94,7 @@ const Portfolio = () => {
                 <h4>HTML</h4>
               </div>
               <div className="more_btn">
-                <Link to="/moportfolio">
+                <Link to="/portfolio/moportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>

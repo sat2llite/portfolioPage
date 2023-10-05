@@ -62,9 +62,7 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-half"></i>
                 <h4>HTML/CSS/SCSS</h4>
                 <ul>
-                  <li>1. 웹 표준을 준수하여 코딩할 수 있습니다.</li>
-                  <li>2. 반응형 페이지를 만들 수 있습니다.</li>
-                  <li>3. sass/scss를 사용하여 코딩할 수 있습니다.</li>
+                  <li>웹 표준을 준수하여 반응형 페이지를 만들 수 있습니다.</li>
                 </ul>
               </div>
             </div>
@@ -82,9 +80,7 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-empty"></i>
                 <h4>Javascript</h4>
                 <ul>
-                  <li>1. </li>
-                  <li>2. </li>
-                  <li>3. </li>
+                  <li>반응형 디자인에 따라 상황에 맞게 소스를 작성할 수 있습니다.</li>
                 </ul>
               </div>
             </div>
@@ -103,9 +99,7 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-empty"></i>
                 <h4>React/Vue</h4>
                 <ul>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
+                  <li>재사용 가능한 컴포넌트를 이용하여 개발할 수 있습니다.</li>
                 </ul>
               </div>
             </div>
@@ -123,9 +117,7 @@ const Skills = () => {
                 <i class="nes-icon is-small star is-half"></i>
                 <h4>Photoshop/Figma</h4>
                 <ul>
-                  <li>1. </li>
-                  <li>2. </li>
-                  <li>3. </li>
+                  <li>프로젝트 시안을 제작할 수 있습니다.</li>
                 </ul>
               </div>
             </div>

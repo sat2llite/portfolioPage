@@ -42,32 +42,32 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
   },
   {
-    path: "/reactportfolio",
+    path: "/portfolio/reactportfolio",
     element: <ReactPortfolio />,
     errorElement: <NotFound />,
   },
   {
-    path: "/quizportfolio",
+    path: "/portfolio/quizportfolio",
     element: <QuizPortfolio />,
     errorElement: <NotFound />,
   },
   {
-    path: "/arcportfolio",
+    path: "/portfolio/arcportfolio",
     element: <ArcPortfolio />,
     errorElement: <NotFound />
   },
   {
-    path: "/poloportfolio",
+    path: "/portfolio/poloportfolio",
     element: <PoloPortfolio />,
     errorElement: <NotFound />
   },
   {
-    path: "/youtubeportfolio",
+    path: "/portfolio/youtubeportfolio",
     element: <YoutubePortfolio />,
     errorElement: <NotFound />
   },
   {
-    path: "/moportfolio",
+    path: "/portfolio/moportfolio",
     element: <MoPortfolio />,
     errorElement: <NotFound />
   }

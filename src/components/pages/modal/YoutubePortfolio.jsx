@@ -7,7 +7,7 @@ const YoutubePortfolio = () => {
       <div className="portfolio_content">
         <div className="inner">
           <div className="left">
-            <img src="img/react_port.png" alt="" />
+            <img src="../img/react_port.png" alt="" />
           </div>
 
           <div className="right">
@@ -17,7 +17,7 @@ const YoutubePortfolio = () => {
               </Link>
             </div>
 
-            <p>리액트로 유튜브 클론코딩</p>
+            <p>리액트로 작업한 유튜브 클론코딩입니다.</p>
             <div className="in_more_btn">
               <Link to="https://sat2llite-react-youtube.netlify.appp" target="_blank">
                 <button className="in_more">site</button>
