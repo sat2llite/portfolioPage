@@ -7,7 +7,7 @@ const MoPortfolio = () => {
       <div className="portfolio_content">
         <div className="inner">
           <div className="left">
-            <img src="img/react_port.png" alt="" />
+            <img src="../img/mo_port.png" alt="" />
           </div>
 
           <div className="right">

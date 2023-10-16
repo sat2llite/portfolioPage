@@ -105,7 +105,7 @@ const Portfolio = () => {
                 <h4>&nbsp;</h4>
               </div>
               <div className="more_btn">
-                <button className="more">VIEW MORE</button>
+                {/* <button className="more">VIEW MORE</button> */}
               </div>
             </div>
 
@@ -114,7 +114,7 @@ const Portfolio = () => {
                 <h4>&nbsp;</h4>
               </div>
               <div className="more_btn">
-                <button className="more">VIEW MORE</button>
+                {/* <button className="more">VIEW MORE</button> */}
               </div>
             </div>
           </div>
