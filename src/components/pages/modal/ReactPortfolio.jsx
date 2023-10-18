@@ -28,6 +28,7 @@ const ReactPortfolio = () => {
             <p>
               도트 게임 형식으로 디자인하였고, 리액트를 사용하여 작업했습니다.
             </p>
+            <p>모바일에서도 볼 수 있도록 반응형으로 작업했습니다.</p>
             <div className="in_more_btn">
               <Link
                 to="https://seungyeon-portfolio.netlify.app"
