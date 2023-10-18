@@ -17,7 +17,9 @@ const YoutubePortfolio = () => {
               </Link>
             </div>
 
-            <p>리액트로 작업한 유튜브 클론코딩입니다.</p>
+            <p>React로 제작한 유튜브 클론코딩 페이지입니다.</p>
+            <br />
+            <p>YouTube Data API를 사용하여 인기 동영상을 불러오도록 코딩했습니다.</p>
             <div className="in_more_btn">
               <Link to="https://sat2llite-react-youtube.netlify.app" target="_blank">
                 <button className="in_more">site</button>
