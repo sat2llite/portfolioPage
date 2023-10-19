@@ -5,13 +5,13 @@ React를 사용하여 작업했고, 도트 게임 형식으로 디자인했습�
 
 <br>
 
-### ⚙️ 개발환경
+## ⚙️ 개발환경
 
 React, react-router-dom, tailwind, scss
 
 <br>
 
-### ✒️ 코드 리뷰
+## ✒️ 코드 리뷰
 
 실제 도트 게임처럼 말풍선 안에 타이핑 효과를 낼 수 있도록 하고 싶어서
 useState와 useEffec, setInterval을 사용했습니다.
