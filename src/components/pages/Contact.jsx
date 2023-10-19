@@ -6,7 +6,7 @@ const Contact = () => {
   // const txt = "Github \n velog \n contact";
   const txt = "Github";
   const velog = "Velog";
-  const contact = "Contact";
+  const contact = "Contact : 010-4730-8666";
   // const texts = ["Github", "Velog", "Contact"];
 
   // const [text, setText] = useState("");

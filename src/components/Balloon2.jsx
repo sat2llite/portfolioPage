@@ -14,9 +14,7 @@ const Balloon2 = ({ text, compUrl, velog, contact }) => {
             <p>{velog}</p>
           </Link>
 
-          <Link to="">
             <p>{contact}</p>
-          </Link>
         </div>
       </div>
 
