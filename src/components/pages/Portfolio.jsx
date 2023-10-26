@@ -48,7 +48,7 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <Link to="/portfolio/youtubeportfolio">
+                <Link to="/portfolio/poloportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 <h4>React</h4>
               </div>
               <div className="more_btn">
-                <Link to="/portfolio/poloportfolio">
+                <Link to="/portfolio/youtubeportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
