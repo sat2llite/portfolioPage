@@ -67,10 +67,10 @@ const Portfolio = () => {
 
             <div className="box box04">
               <div className="bar">
-                <h4>JS</h4>
+                <h4>Vue</h4>
               </div>
               <div className="more_btn">
-                <Link to="/portfolio/quizportfolio">
+                <Link to="/portfolio/vueportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -80,10 +80,10 @@ const Portfolio = () => {
           <div className="box_wrap flex_between">
             <div className="box box05">
               <div className="bar">
-                <h4>HTML</h4>
+                <h4>JS</h4>
               </div>
               <div className="more_btn">
-                <Link to="/portfolio/arcportfolio">
+                <Link to="/portfolio/quizportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
@@ -94,18 +94,20 @@ const Portfolio = () => {
                 <h4>HTML</h4>
               </div>
               <div className="more_btn">
-                <Link to="/portfolio/moportfolio">
+                <Link to="/portfolio/arcportfolio">
                   <button className="more">VIEW MORE</button>
                 </Link>
               </div>
             </div>
 
-            <div className="box">
+            <div className="box box07">
               <div className="bar">
-                <h4>&nbsp;</h4>
+                <h4>HTML</h4>
               </div>
               <div className="more_btn">
-                {/* <button className="more">VIEW MORE</button> */}
+                <Link to="/portfolio/moportfolio">
+                  <button className="more">VIEW MORE</button>
+                </Link>
               </div>
             </div>
 
