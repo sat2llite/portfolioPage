@@ -4,7 +4,7 @@ import Balloon from "../Balloon";
 
 const Profile = () => {
   const txt =
-    "이름: 백승연 \n 나이: 28 \n 연락처: 010-4730-8666 \n 주소: 경기도 부천시";
+    "이름: 백승연 \n 나이: 29 \n 연락처: 010-4730-8666 \n 주소: 경기도 부천시";
   const [text, setText] = useState("");
   const [count, setCount] = useState(0);
 
